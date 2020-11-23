@@ -1,0 +1,103 @@
+.home{
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.inner p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width:40%;
+    text-align: center;
+}
+
+.inner2{
+    align-items: center;
+}
+
+.inner2 p{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info{
+    background-color: black;
+    width: 80%;
+    border: 5px solid aliceblue;
+    padding: 50px;
+    margin: 20px;
+    color: aliceblue;
+    word-wrap: break-word;
+}
+
+.prdsss p{
+    width:100px;
+}
+
+.carousel {
+  position: relative;
+  height: 500px;
+  width: 750px;
+}
+
+.slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 3em;
+  color: white;
+  line-height: 400px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.slide:nth-child(1) {
+    background-color:white;
+    opacity: 1;
+}
+
+.slide:nth-child(2) {
+    background-color: white;
+}
+
+.slide:nth-child(3) {
+    background-color: white;
+}
+
+.slide[data-state=active] {
+  display: block;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.indicator {
+    cursor: pointer;
+}
